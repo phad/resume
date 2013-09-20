@@ -1,28 +1,26 @@
 %______________________________________________________________________________________________________________________
 % @brief    LaTeX2e Resume for Paul Hadfield
-\documentclass[margin,line]{resume}
-
+\documentclass[margin = 0cm,line]{resume}
+\usepackage[
+top    = 1.50cm,
+bottom = 1.00cm,
+left   = 1.50cm,
+right  = 2.75cm]{geometry}
+\usepackage{hyperref}
+%\setlength{\topmargin}{-1cm}
 
 %______________________________________________________________________________________________________________________
 \begin{document}
-\name{\Large Paul Hadfield CEng MIET}
+\name{\Large Paul Hadfield MA(Cantab) CEng MIET}
 \begin{resume}
 
     %__________________________________________________________________________________________________________________
     % Contact Information
     \section{\mysidestyle Contact\\Information}
 
-    57A Bedwardine Road              \hfill home: +44 20 8653 4029          \vspace{0mm}\\\vspace{0mm}%
-    Upper Norwood                          \hfill mobile: +44 7973 297961         \vspace{0mm}\\\vspace{0mm}%
-    London, UK                                 \hfill e-mail: paul@phad.org.uk         \vspace{0mm}\\\vspace{-4.5mm}%
-
-
-    %__________________________________________________________________________________________________________________
-    % DoB, etc.
-    \section{\mysidestyle Date of\\Birth}
-
-    1972-Aug-09                     \vspace{0mm}\\\vspace{-4.5mm}%
-
+    7 Ellery Road                          \hfill e-mail: \url{paul@phad.org.uk}            \vspace{0mm}\\\vspace{0mm}%
+    Upper Norwood                          \hfill \url{http://github.com/phad}              \vspace{0mm}\\\vspace{0mm}%
+    London, UK                             \hfill \url{http://linkd.in/18FcLqk}          \vspace{0mm}\\\vspace{-4.5mm}%
 
     %__________________________________________________________________________________________________________________
     % Career Objective
@@ -30,47 +28,42 @@
 
     A developer role in a small, fast-moving team, developing funky products that make a real difference to their
     users, offering intellectual challenge, technical variety and application of responsible software development
-    practices.
+    practices.  I am particularly interested in projects that lie at the intersection of technology and the creative
+    arts.
 
 
     %__________________________________________________________________________________________________________________
     % Profile
     \section{\mysidestyle Profile}
 
-    Paul is a software engineer with seventeen years of experience in object-oriented design and development
-    in C++  on Symbian, and two years experience of Java on Linux and Android.  His server experience at Google
-    includes design and deployment of a distributed search service for mobile apps, using Borg, GFS, Bigtable,
-    Map-Reduce and other Google technologies.  His Symbian development experience spans releases 6.0 to 9.2
-    of Symbian OS with a focus on S60 UI and the area of client-side application protocols.
-    Paul has a record of fostering communicative and productive teams across multiple
-    time-zones. His previous roles have often been customer-facing, and Paul has sat on standardisation bodies.
-    Paul is passionate about developing usable software in an Agile team setting with a focus on prototyping and
-    test-driven development.
+    I am a professional Software Engineer with nineteen years of experience developing mobile apps for Android and
+    Symbian phones (and to a lesser extent, iOS), and in back-end tiered services implemented in Ruby, Java and C++
+    supporting web and mobile clients.  I made space in my life for computers at the age of 10 with a BBC Micro Model
+    B, quickly moving from BASIC to 6502 assembler, and I haven't looked back since!  These days I prefer Mac OS X and
+    Ubuntu.
 
+    In more recent times, I've worked at all stages of the product lifecycle and have design experience from detail to
+    system architecture spanning multiple services. I enjoy working in small teams in an agile environment, and have
+    experienced life in organisations ranging from start-ups to multi-national.  I am a Chartered Engineer (CEng) and a
+    Member of the IET (MIET).
 
-%__________________________________________________________________________________________________________________
-    % Current Role
-    \section{\mysidestyle Current Role}
+    My server experience at Google includes design and deployment of a distributed search service for mobile apps,
+    using Borg, GFS, Bigtable, Megastore, Map-Reduce and other Google technologies.  Client-side products included
+    the Google Search app for Symbian/Series 60 and Windows Mobile. which was built on a portable C++ codebase.
 
-    Since January I've worked as a software engineer on Google's Android Market team, and am involved in
-    development of features on both server and client side.  Server-side, I'm working on an analysis pipeline using
-    Map-Reduce.  Client-side, I'm working on various unreleased new UI features in the Market client for tablet.
-    
-    Prior to joining the Android team, I worked on Google's `Mobile App Search' product, which adds results for mobile
-    applications to Google's mobile search results.  I was the first of three engineers to join this team, and consequently
-    did most of the early prototyping and architectural design work.  I've implemented a crawler which scrapes all apps
-    on the Apple App Store, merges with in-house data from Android Marketplace into a unified data repository. This
-    repository is then queried by Mobile Search when the user demonstrates intent to find apps to install on their phone.
-    
-    I was also responsible for designing a
-    server implementation that is robust and redundant, deploying it across Google's production grid, and setting up
-    monitoring systems that check health, alert on failures, and gather statistics on performance and usage.  I also set up
-    our continuous integration system and have been a driver behind our effort to improve test coverage.  My recent work
-    has improved by 2-3x the freshness of our repository data by refactoring our data processing pipeline to work on
-    smaller chunks of data in a more continuous manner.
+    At Songkick my experience includes design and development of back-end services for the \url{www.songkick.com} and
+    \url{detour.songkick.com} sites, development work and technical leadership for both Android and iPhone mobile apps,
+    and product analytics, A/B testing (including the statistical underpinnings), and `big data' processing with
+    Map-Reduce and Pig on Hadoop.
 
+    When at Symbian I worked on application-protocol components of the OS in C++, including architecting and coding
+    the platform's HTTP stack, work on SyncML and OMA Device Management.  Later I moved on to work on the Graphics team
+    working on performance improvements.
 
-%__________________________________________________________________________________________________________________
+    I have a record of fostering communicative and productive teams across multiple time-zones.  Some of my previous
+    roles have been customer-facing, and I have participated in standardisation bodies.
+
+    %__________________________________________________________________________________________________________________
     % Education
     \section{\mysidestyle Education}
 
@@ -85,6 +78,9 @@
         \item Y1 (II.I): Electronics, Mathematics, Structures, Mechanics, Materials,  Drawing
     \end{list2}\vspace{-1.5mm}
 
+    \textbf{Coursera}, \url{www.coursera.org} \vspace{2mm}\\\vspace{1mm}%
+    Introduction to Data Science\hfill \textbf{May 2013}\vspace{-3mm}\\\vspace{-1mm}%
+
     \textbf{Beauchamp College}, Leicester, UK\hfill \textbf{ September 1986 -- July 1990}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item GCE `S' Levels: Mathematics (1), Chemistry (2)
@@ -93,15 +89,27 @@
     \end{list2}\vspace{-1.5mm}
  
 
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Professional Experience
     \section{\mysidestyle Professional\\Experience}
 
-    \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer} \hfill \textbf{January 2006 -- present}\vspace{-3mm}\\\vspace{-1mm}%
+    \textbf{Songkick.com, Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Software Engineer} \hfill \textbf{August 2011 -- September 2013}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Android Market (Java,  Google server-side and Android), 2011-present
-        \item Mobile App Search (Java, C++, Google server-side), 2009-2010
+        \item Songkick Mobile Team, both iPhone and Android (Objective-C, iOS6, Java, Android, Tech Lead), 2013
+        \item Data Science Team (Ruby, Python, Java, Hadoop/Pig, MongoDB, MySQL, Tech Lead), 2013
+        \item Songkick Detour (Ruby, Rails 3, MongoDB, MySQL, AWS EC2), 2012-2013
+        \item Songkick for Android - both client and server work (Java, Android, Ruby, Tech Lead), 2012 
+        \item Various back-end services for songkick.com (Ruby, MySQL, Redis, MongoDB), 2011-2012
+        \item www.songkick.com features (Ruby, Rails, MySQL), 2011
+    \end{list2}\vspace{-1.5mm}
+    
+    \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Software Engineer} \hfill \textbf{January 2006 -- August 2011}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Android Maps (Java,  Android), 2011
+        \item Android Market (Java,  Google server-side and Android), 2011
+        \item Mobile App Search (Java, C++, STL, Google server-side), 2009-2010
         \item Mobile Download Server (Java, Google server-side), 2009
         \item Google Mobile App (Symbian C++, S60 5th Edition, SonyEricsson Satio), 2009
         \item Google Mobile App (Symbian C++, S60 3rd Edition, various phones, Tech Lead), 2008
@@ -122,7 +130,7 @@
     \textsl{Analyst/Programmer, Consultant} \hfill \textbf{October 1995 -- April 1999}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Sea King Whisky, a tactical data link for Racal (Ada95, VxWorks), 1999
-        \item Land Formation Model, a distributed OO event-based simulation for DERA (now QinetiQ) (C++/Solaris/CORBA), 1996-1998
+        \item Land Formation Model, a distributed OO event-based simulation for DERA\\(now QinetiQ) (C++/Solaris/CORBA), 1996-1998
         \item Bids and sales for Simulation and Modelling Account, 1996
         \item STAMGEN, land-based sensor simulation for DERA (C++/Solaris/ILOG Views), 1994-1996
     \end{list2}\vspace{-1.5mm}
@@ -136,75 +144,89 @@
     \end{list2}\vspace{-1.5mm}
 
 
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Technical Skills
     \section{\mysidestyle Technical Skills} 
 
-    Languages: C++ incl. STL, Java incl. Guava and Guice            \vspace{0.5mm}\\%
-    Scripting: Python, bash, sed              \vspace{0.5mm}\\%
-    Mobile OSes: Symbian OS 6.0-9.2, S60 2-5, Android 2.1               \vspace{0.5mm}\\%
-    Desktop OSes: Linux (Ubuntu, RedHat), Windows 95-XP, Mac OS X, Solaris 2.7          \vspace{0.5mm}\\%
-    Google-specific: Protocol Buffers, Java Servlet Engine, Map-Reduce, BigTable, Megastore, Blobstore, Borg, Borgmon, GSLB         \vspace{0.5mm}\\%
-    IDEs: Eclipse, IntelliJ, Metrowerks Codewarrior, Microsoft Visual Studio              \vspace{0.5mm}\\%
-    Continuous Integration/Build: CruiseControl, Ant              \vspace{0.5mm}\\%
-    OO Design: UML, Rational Rose               \vspace{0.5mm}\\%
-    Version Control: Perforce, git, RCS, SCCS              \vspace{0.5mm}\\%
-    Office, etc.: Google Docs, Microsoft Office, OpenOffice, \LaTeX, the GIMP, Photoshop/Illustrator
+    These are listed in order of expertise from most expert to least familiar.
+
+    \textbf{Languages}: C++ incl. STL, Ruby, Java incl. Guava and Guice, Python, Javascript, Objective-C, R	  \vspace{0.5mm}\\%
+    \textbf{Scripting}: bash, sed, awk                                                                         \vspace{0.5mm}\\%
+    \textbf{Mobile OSes}: Symbian OS 6.0-9.2, S60 2-5, Android 2.1-4.0, iOS6.1                                 \vspace{0.5mm}\\%
+    \textbf{Desktop OSes}: Ubuntu; Mac OS X; Windows 95,XP,2000,7                                              \vspace{0.5mm}\\%
+    \textbf{Google-specific}: Protocol Buffers, Map-Reduce, BigTable, Megastore, Java Servlet Engine,
+                     Blobstore, Borg, Borgmon, GSLB                                                   \vspace{0.5mm}\\%
+    \textbf{IDEs}: Eclipse, IntelliJ, XCode, Microsoft Visual Studio, Metrowerks Codewarrior                   \vspace{0.5mm}\\%
+    \textbf{Continuous Integration/Build}: Jenkins, CruiseControl; Ant, Maven, Rake                            \vspace{0.5mm}\\%
+    \textbf{Databases, datastores and query languages}: MySQL, MongoDB, Hadoop/HDFS, Pig, Redis, memcached     \vspace{0.5mm}\\%
+    \textbf{Monitoring}: Zabbix, Scalyr, PagerDuty                                                             \vspace{0.5mm}\\%
+    \textbf{API design}: REST APIs with HTTP/JSON, XML, OAuth                                                  \vspace{0.5mm}\\%
+    \textbf{OO Design}: UML, Rational Rose                                                                     \vspace{0.5mm}\\%
+    \textbf{Version Control}: Perforce, git                                                                    \vspace{0.5mm}\\%
+    \textbf{Project Management}: Kanban, Pivotal Tracker, Trello                                               \vspace{0.5mm}\\%
+    \textbf{Office, etc.}: Google Docs, Microsoft Office, OpenOffice, \LaTeX, the GIMP, Photoshop/Illustrator, Sibelius
 
     %__________________________________________________________________________________________________________________
     % Awards
     \section{\mysidestyle Awards} 
 
-    Google Peer Bonus, 2009, 2008;  Spot Bonus, 2008              \vspace{0.5mm}\\%
-    Symbian `Extra Mile' Award, 2004, 2002, 2000              \vspace{0.5mm}\\%
-    Symbian Teamwork Award, 2001              \vspace{0.5mm}\\%
-    College Travel Report Prize following travels in South America, 1994              \vspace{0.5mm}\\%
-    College Prize for Second Year exam results, 1993              \vspace{0.5mm}\\%
-    Institute Of Electrical Engineers Jubilee Scholarship to University, 1990              \vspace{0.5mm}\\%
-    Thorn EMI Electronics Ltd. `thick sandwich' sponsorship to University, 1990              \vspace{0.5mm}\\%
-    Engineering Employers London Association 'Young Trainee of the Year', 1990
+    Google Peer Bonus, 2009, 2008;  Spot Bonus, 2008                                                  \vspace{0.5mm}\\%
+    Symbian `Extra Mile' Award, 2004, 2002, 2000                                                      \vspace{0.5mm}\\%
+    Symbian Teamwork Award, 2001                                                                      \vspace{0.5mm}\\%
+    College Travel Report Prize following travels in South America, 1994                              \vspace{0.5mm}\\%
+    College Prize for Second Year exam results, 1993                                                  \vspace{0.5mm}\\%
+    Institute Of Electrical Engineers Jubilee Scholarship to University, 1990                         \vspace{0.5mm}\\%
+    Thorn EMI Electronics Ltd. `thick sandwich' sponsorship to University, 1990                       \vspace{0.5mm}\\%
+    Engineering Employers London Association `Young Trainee of the Year', 1990
 
-
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Publications
     \section{\mysidestyle Publications}
 
     Cipolla, R., Hadfield, P.A., Hollinghurst, N.J.,
     ``Uncalibrated Stereo Vision with Pointing for a Man-Machine Interface",
     \textsl{Proceedings of IAPR Workshop on Machine Vision Applications}, pp163 - 166, Kawasaki, 1994.
-    
 
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Affiliations
     \section{\mysidestyle Affiliations and Responsibilities}
 
-    Member of Open Rights Group, 2010 --             \vspace{0.5mm}\\%
-    Registered as CEng, 2005              \vspace{0.5mm}\\%
-    Member of CAMRA, 2004 --             \vspace{0.5mm}\\%
+    Member of Open Rights Group, 2010 --                                                              \vspace{0.5mm}\\%
+    Trustee of South London Community Music, 2009 -- 2010                                             \vspace{0.5mm}\\%
+    Registered as CEng, 2005                                                                          \vspace{0.5mm}\\%
+    Member of CAMRA, 2004 --                                                                          \vspace{0.5mm}\\%
     Member of the IEE (now IET), 1991 --
 
-
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Hobbies/Interests
     \section{\mysidestyle Hobbies and Interests}
+    \vspace{1.5mm}
+	\begin{table}[ht]
+        \begin{tabular}{p{2cm} p{12cm}}
+        {Music}&{saxophone (soprano, alto, tenor, baritone - ABRSM Grade VIII distinction on alto, 1990), piano
+	           (ABRSM Grade VIII merit, 1990), choral singing; transcription, arrangement and composition for my bands;
+	           attending gigs; eclectic listening tastes.}\\
+                                                                                                      \vspace{0.5mm}\\%
+		{}&{I currently play in a saxophone choir \url{www.incrediblesaxband.org.uk} and in the jazz big band
+		\textsl{`King Groovy and the Hornstars'} \url{www.hornstars.com}.  I've also played in numerous saxophone
+		quartets, wind orchestras, jazz groups and have about 12 years choral experience including chamber and larger
+		choirs;}\\                                                                                    \vspace{0.5mm}\\%
+	    {Photography}&{Some of my work is on \url{hadfieldp.zenfolio.com}}\\
+                                                                                                      \vspace{0.5mm}\\%
+		{Other}&{indoor rowing, hacking, travel, home-brewing and drinking real ale}\\                \vspace{0.5mm}\\%
+		{Family}&{With my partner Rachel, and two energetic kids, Oscar (8) and Miranda (4)}\\        \vspace{0.5mm}\\%
+        \end{tabular}
+	\end{table}
 
-    Music: 23 yrs saxophone (soprano, alto, tenor), 25 yrs piano, singing; eclectic listening tastes;\vspace{0.5mm}\\%
-    I play in two saxophone bands and in the horn section of a funk band \textsl{`Baron Funkenhausen'};\vspace{0.5mm}\\%
-    Photography, hacking on MythTV/linux, SCUBA diving, travel, real ale;\vspace{0.5mm}\\%
-    Bringing up two lovely kids, Oscar (6) and Miranda (2)
-
-
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Referees
     \section{\mysidestyle Referees} 
 
     Available on request.
 
-
 %______________________________________________________________________________________________________________________
 \end{resume}
 \end{document}
-
 
 %______________________________________________________________________________________________________________________
 % EOF
