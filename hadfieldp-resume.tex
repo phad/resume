@@ -1,6 +1,6 @@
 %______________________________________________________________________________________________________________________
 % @brief    LaTeX2e Resume for Paul Hadfield
-\documentclass[margin = 0cm,line]{resume}
+\documentclass[line]{resume}
 \usepackage[
 top    = 1.50cm,
 bottom = 1.00cm,
@@ -26,7 +26,7 @@ right  = 2.75cm]{geometry}
     % Career Objective
     \section{\mysidestyle Objective}
 
-    A developer role in a fast-moving team, developing funky products that make a real difference to their users,
+    A lead developer role in a fast-moving team, developing funky products that make a real difference to their users,
     offering intellectual challenge, technical variety and the application of responsible software development
     practices.
 
@@ -34,29 +34,31 @@ right  = 2.75cm]{geometry}
     % Profile
     \section{\mysidestyle Profile}
 
-    I am a professional Software Engineer with nineteen years of commercial development experience.  I moved away from
-    electronics towards software during my engineering degree at Cambridge, and I haven't looked back since!  In my
-    career I've worked on mobile apps for Android and Symbian phones, and in back-end tiered services implemented in
-    Ruby, Java and C++ supporting web and mobile clients.  I spent nearly six years working at Google, starting as one
-    of their earliest Software Engineer hires in the London office, and two years at Songkick -- one of London's first
-    Silicon Roundabout start-ups. 
+    I am a professional Software Engineer with over twenty years of commercial development experience.  I moved away
+    from electronics towards software during my engineering degree at Cambridge, and I haven't looked back since!  I've
+    spent nearly ten years working at Google, starting as one of their earliest Software Engineer hires in the London
+    office, and two years at Songkick -- one of London's first Silicon Roundabout start-ups. 
 
-    I have worked at all stages of the product lifecycle, from product discovery though design and implementation to
+    I've worked at all stages of the product lifecycle, from product discovery though design and implementation to
     maintenance. My design experience covers detailed level work up to system architecture spanning multiple services.
-    I've worked successfully on teams split across multiple time zones.
+    I've worked successfully on teams split across multiple time zones and with collaborating organisations.
 
-    My server-side experience at Google includes design and deployment of a distributed search service for mobile apps,
-    using Borg, GFS, Bigtable, Megastore, Map-Reduce and other Google technologies.  Client-side products included
-    Android Maps and the Google Search app for Symbian/Series 60.
+    My server-side experience at Google includes design and deployment of distributed search services for X509
+    certificates and for mobile apps, using Borg, GFS/Colossus, Bigtable, Megastore, Spanner, Map-Reduce, FlumeJava/C++
+    and other Google technologies. Client-side products included Android Maps and the Google Search app for Symbian/S60.
+    In the last 12 months I've regularly coded in Golang, C++, Python, Javascript, Java and SQL.  I'm currently one of
+    Google's team of Golang readability approvers.
 
     At Songkick my experience includes design and development of back-end services for the \url{www.songkick.com} and
-    \url{detour.songkick.com} sites; development work and technical leadership for both Android and iPhone mobile apps;
-    product analytics and A/B testing (including the statistical underpinnings); and dataset processing with Map-Reduce
-    and Pig on Hadoop.
+    \url{detour.songkick.com} sites (Ruby, Rails, MySQL, MongoDB, $\mu$Services); development work and technical leadership
+    for both Android and iPhone mobile apps; product analytics and A/B testing (including the statistical underpinnings)
+    and dataset processing with Python, Map-Reduce and Pig on Hadoop.
 
     When at Symbian I worked on application-protocol components of the OS in C++, including architecture, design and
     coding for the platform's HTTP stack, OMA Device Management and SyncML clients.  These roles were customer-facing
     and included participation in standardisation bodies.
+
+    At Logica I worked on a variety of simulation products, including distributed simulations, for DERA (now Qinetiq).
 
     I am a Chartered Engineer (CEng) and a Member of the IET (MIET).
 
@@ -65,8 +67,18 @@ right  = 2.75cm]{geometry}
     % Professional Experience
     \section{\mysidestyle Professional\\Experience}
 
+    \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
+    \textbf{Senior Software Engineer} \hfill \textbf{November 2013 -- current}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Golang readability reviewer (2017, volunteer basis)
+        \item Certificate Transparency - Log Ingestion and Monitoring (Golang, Python, SQL, Spanner, Borg), 2016-2017
+        \item Transparency Report, HTTPS Certificate Search (Java, Javascript, Closure, Jasmine, HTML/CSS), 2016
+        \item Certificate Transparency - Compliance Monitoring (C++11, Spanner, SQL, Borg, Proto, Stubby), 2015-2016
+        \item Google AdSense Plugin (Java, Guice, Producers, FlumeJava, Javascript, Python, SQL, R), 2013-2014
+    \end{list2}\vspace{-1.5mm}
+
     \textbf{Songkick.com, Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer} \hfill \textbf{August 2011 -- September 2013}\vspace{-3mm}\\\vspace{-1mm}%
+    \textsl{Senior Software Engineer} \hfill \textbf{August 2011 -- September 2013}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Songkick Mobile Team, both iPhone and Android (Objective-C, iOS6, Java, Android, Tech Lead), 2013
         \item Data Science Team (Ruby, Python, Java, Hadoop/Pig, MongoDB, AWS S3/Cloudfront, MySQL, Tech Lead), 2013
@@ -103,9 +115,9 @@ right  = 2.75cm]{geometry}
     \textsl{Analyst/Programmer, Consultant} \hfill \textbf{October 1995 -- April 1999}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Sea King Whisky, a tactical data link for Racal (Ada95, VxWorks), 1999
-        \item Land Formation Model, a distributed OO event-based simulation for DERA\\(now QinetiQ) (C++/Solaris/CORBA), 1996-1998
+        \item Land Formation Model, a distributed event-based simulation for DERA\\(now QinetiQ) (C++/Solaris/CORBA), 1996-1998
         \item Bids and sales for Simulation and Modelling Account, 1996
-        \item STAMGEN, land-based sensor simulation for DERA (C++/Solaris/ILOG Views), 1994-1996
+        \item STAMGEN, land-based sensor simulation for DERA (C++/Solaris/ILOG Views/Geodesy), 1994-1996
     \end{list2}\vspace{-1.5mm}
 
     \textbf{Thorn EMI Electronics Ltd.}, Feltham, Middlesex, UK \vspace{2mm}\\\vspace{1mm}%
@@ -123,12 +135,11 @@ right  = 2.75cm]{geometry}
 
     These are listed in order of expertise from most to least familiar.
 
-    \textbf{Languages}: C++ incl. STL, Ruby, Java incl. Guava and Guice, Python, Javascript, Objective-C, R	  \vspace{0.5mm}\\%
+    \textbf{Languages}: Golang, C++11, Ruby, Java incl. Guava and Guice, Python, Javascript, Objective-C, R    \vspace{0.5mm}\\%
     \textbf{Scripting}: bash, sed, awk                                                                         \vspace{0.5mm}\\%
     \textbf{Mobile OSes}: Symbian OS 6.0-9.2, S60 2-5, Android 2.1-4.0, iOS6.1                                 \vspace{0.5mm}\\%
     \textbf{Desktop OSes}: Ubuntu; Mac OS X; Windows 95,XP,2000,7                                              \vspace{0.5mm}\\%
-    \textbf{Google-specific}: Protocol Buffers, Map-Reduce, BigTable, Megastore, Java Servlet Engine,
-                     Blobstore, Borg, Borgmon, GSLB                                                   \vspace{0.5mm}\\%
+    \textbf{Google-specific}: Protocol Buffers, Map-Reduce, FlumeJava/C++, Spanner, Java Producers, Guice, Borg, Borgmon, GSLB                                                   \vspace{0.5mm}\\%
     \textbf{IDEs}: Eclipse, IntelliJ, XCode, Microsoft Visual Studio, Metrowerks Codewarrior                   \vspace{0.5mm}\\%
     \textbf{Continuous Integration/Build}: Jenkins, CruiseControl; Ant, Maven, Rake                            \vspace{0.5mm}\\%
     \textbf{Databases, datastores and query languages}: MySQL, MongoDB, Hadoop/HDFS, Pig, Redis, memcached     \vspace{0.5mm}\\%
@@ -154,9 +165,12 @@ right  = 2.75cm]{geometry}
         \item Y1 (II.I): Electronics, Mathematics, Structures, Mechanics, Materials,  Drawing
     \end{list2}\vspace{-1.5mm}
 
-    \textbf{Coursera}, \url{www.coursera.org} \vspace{2mm}\\\vspace{1mm}%
-    Statistics 1\hfill \textbf{ongoing}                                               \vspace{0.5mm}\\%
-    Introduction to Data Science\hfill \textbf{May 2013}%
+    \textbf{Coursera}, \url{www.coursera.org}\hfill \textbf{ 2012 -- 2017}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Technical courses: Bitcoin and Cryptocurrency Tech; Cryptography I; Statistics I, Introduction to Data
+              Science; The Data Scientist's Toolbox; R Programming; Getting and Cleaning Data; Exploratory Data Analysis
+        \item Non-technical courses: Technology of Music Production; Art of Music Production; Write Like Mozart
+    \end{list2}\vspace{-1.5mm}
 
     \textbf{Beauchamp College}, Leicester, UK\hfill \textbf{ September 1986 -- July 1990}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
@@ -169,7 +183,8 @@ right  = 2.75cm]{geometry}
     % Awards
     \section{\mysidestyle Awards} 
 
-    Google Peer Bonus, 2009, 2008;  Spot Bonus, 2008                                                  \vspace{0.5mm}\\%
+    London \& Southeast Craft Beer Competition 2017 Gold Medal (Brown and Bitter category)            \vspace{0.5mm}\\%
+    Google TI Award 2016; Peer Bonus x6 2008-2016; Spot Bonus, 2015, 2008                             \vspace{0.5mm}\\%
     Symbian `Extra Mile' Award, 2004, 2002, 2000                                                      \vspace{0.5mm}\\%
     Symbian Teamwork Award, 2001                                                                      \vspace{0.5mm}\\%
     College Travel Report Prize following travels in South America, 1994                              \vspace{0.5mm}\\%
@@ -204,11 +219,11 @@ right  = 2.75cm]{geometry}
         \begin{tabular}{p{2cm} p{12cm}}
         {Music}&{Saxophones (various shapes and sizes; Grade VIII in 1990), piano (Grade VIII in 1990), choral singing;
                  attending gigs; eclectic listening tastes. I currently play in the jazz big band \textsl{`King Groovy
-                 and the Hornstars'} \url{www.hornstars.com}. }\\                                     \vspace{0.5mm}\\%
-	    {Photography}&{Some of my work is on \url{hadfieldp.zenfolio.com}}\\
+                 and the Hornstars'} \url{http://hornstars.com}. }\\                                     \vspace{0.5mm}\\%
+        {Recording}&{Some of my work is on \url{http://soundcloud.com/hadfieldp}}\\
                                                                                                       \vspace{0.5mm}\\%
-		{Other}&{Indoor rowing, hacking, travel, home-brewing and enjoying real ale}\\                \vspace{0.5mm}\\%
-		{Family}&{With my partner Rachel, and two energetic kids, Oscar (8) and Miranda (4)}\\
+        {Other}&{Home-brewing, photography, hacking, running, indoor rowing, travel, SE19ista}\\        \vspace{0.5mm}\\%
+        {Family}&{With my partner Rachel, and two energetic kids, Oscar (12) and Miranda (8)}\\
         \end{tabular}
     \end{table}
     %__________________________________________________________________________________________________________________
