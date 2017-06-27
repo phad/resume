@@ -34,38 +34,33 @@ right  = 2.75cm]{geometry}
     % Profile
     \section{\mysidestyle Profile}
 
-    I am a professional Software Engineer with over twenty years of commercial development experience.  I currently work
-    in the Google Security \& Privacy group on Certificate Transparency - an effort to increase trust in the Web PKI and
-    to detect CA malfeasance or compromise.  I've spent nearly ten years working at Google, starting in 2006 as one of
-    their earliest Software Engineer hires in the London office.  I also have start-up experience from two years at
-    Songkick, one of London's first Silicon Roundabout start-ups.
+    I am a Software Engineer with over twenty years of professional development experience.  I currently work in
+    Google's Security group on Certificate Transparency - an effort to increase trust in the Web PKI and to detect CA
+    malfeasance or compromise.  In 2006 I was one of Google's earliest SWE hires in the new London engineering office.
+    I have start-up experience from two years at Songkick, one of London's first Silicon Roundabout start-ups.
 
-    I've worked at all stages of the product lifecycle, from product discovery though design and implementation to
-    maintenance. My design experience covers detailed level work up to system architecture spanning multiple services.
-    I've worked successfully on teams split across multiple time zones and with collaborating organisations.
+    %__________________________________________________________________________________________________________________
+    % Selected Projects
+    \section{\mysidestyle Selected Projects}
 
-    My server-side experience at Google includes design, coding and production operation of data ingestion, storage and
-    search services for X509 certificates and for mobile apps, using Borg, GFS/Colossus, Bigtable, Spanner, Map-Reduce,
-    FlumeJava/C++ and other parts of the Google stack. Client-side products included Android Maps and the Google Search
-    app for Symbian/S60.  In the last 12 months I've regularly coded in Golang, C++, Python, Javascript, Java and SQL.
-    I recently became one of Google's team of volunteer Golang readability approvers.
+    For the \textsl{Google Transparency Report} I built a system to ingest millions of SSL certs from all known CT Logs,
+    cryptographically verifying the Logs' correctness in the process.  I designed the storage and serving layers, and
+    implemented a front-end to allow users to search for certificates that might be served on their domains.  This
+    helps users understand whether mis-issuance of certs has occurred that could impact the safety of their users.
+    During this project I discovered the mis-issued \url{google.com} certificate that got Symantec into so much trouble.
 
-    At Songkick my experience includes design and development of back-end services for the \url{www.songkick.com} and
-    \url{detour.songkick.com} sites (Ruby, Rails, MySQL, MongoDB, $\mu$Services); development work and technical
-    leadership for both Android and iPhone mobile apps; product analytics and A/B testing (including the statistical
-    underpinnings) and dataset processing with Python, Map-Reduce and Pig on Hadoop.
+    As part of \textsl{Google's AdSense Plugin for Wordpress} I implemented a feature to automatically place Ad Slots
+    in users' Wordpress pages in locations recommended by an ML system. I did the back-end and front-end dev work.  To
+    determine if the recommendations were effective I designed an A/B experiment and performed a statistical analysis
+    of monetization uplift.  I then refocused the product to emphasize the aspects that performed best.
 
-    When at Symbian I worked on application-protocol components of the OS in C++, including architecture, design and
-    coding for the platform's HTTP stack, OMA Device Management and SyncML clients.  These roles were customer-facing
-    and included participation in standardisation bodies.
+    I built the back-end services for \textsl{Songkick's `Detour'} crowdfunded concert product. I enjoyed
+    being part of a small, Agile dev team working in the early product discovery phase, with rapid cycles of building
+    out new features, launching experimentally, measuring their performance through A/B tests and user studies and
+    analysing data collected from the product. The ideas behind `Detour' were quite disruptive, and it was exciting to
+    see how the product resonated with users.
 
-    At Logica I worked on a variety of research products for DERA (now Qinetiq), including parallel discrete event
-    simulations based on a distributed agent paradigm with accompanying visualisation tools.
-
-    I am a Chartered Engineer (CEng) and a Member of the IET (MIET).
-
-
-%__________________________________________________________________________________________________________________
+    %__________________________________________________________________________________________________________________
     % Professional Experience
     \section{\mysidestyle Professional\\Experience}
 
@@ -83,7 +78,7 @@ right  = 2.75cm]{geometry}
     \textsl{Senior Software Engineer} \hfill \textbf{August 2011 -- September 2013}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Songkick Mobile Team, both iPhone and Android (Objective-C, iOS6, Java, Android, Tech Lead), 2013
-        \item Data Science Team (Ruby, Python, Java, Hadoop/Pig, MongoDB, AWS S3/Cloudfront, MySQL, Tech Lead), 2013
+        \item Data Science Team (Ruby, Python, Java, Hadoop/Pig, MongoDB, AWS S3, MySQL, Tech Lead), 2013
         \item Songkick Detour (Ruby, Rails 3, MongoDB, MySQL, AWS EC2), 2012-2013
         \item Songkick for Android - both client and server work (Java, Android, Ruby, Tech Lead), 2012 
         \item Various back-end services for songkick.com (Ruby, MySQL, Redis, MongoDB), 2011-2012
@@ -93,64 +88,33 @@ right  = 2.75cm]{geometry}
     \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
     \textsl{Software Engineer} \hfill \textbf{January 2006 -- August 2011}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Android Maps (Java,  Android), 2011
-        \item Android Market (Java,  Google server-side and Android), 2011
+        \item Android Maps (Java,  Android 4.0), 2011
+        \item Android Market (Java,  Google server-side and Android 3.0), 2011
         \item Mobile App Search (Java, C++, STL, Google server-side), 2009-2010
-        \item Mobile Download Server (Java, Google server-side), 2009
-        \item Google Mobile App (Symbian/portable C++, S60 5th Edition, SonyEricsson Satio), 2009
-        \item Google Mobile App (Symbian/portable C++, S60 3rd Edition, various phones, Tech Lead), 2008
+        \item Google Mobile App (Symbian/portable C++, S60 3rd \& 5th Edition, Tech Lead), 2008-2009
         \item Various unreleased products, Symbian/portable C++, S60 3rd Edition, various phones), 2006-2007
     \end{list2}\vspace{-1.5mm}
 
     \textbf{Symbian Software Ltd.}, London, UK \vspace{2mm}\\\vspace{1mm}%
     \textsl{Principal Software Engineer} \hfill \textbf{May 1999 -- December 2005}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Graphics (C++, Symbian 9.2), 2005
         \item SyncML Device Management (C++, Symbian 9.1, Tech Lead, Architect), 2003-2005
         \item Representative for Symbian to Open Mobile Alliance, DM working group, 2004-2005
         \item HTTP Client (C++, Symbian 6.1-8.0, Tech Lead), 2001-2003
         \item WAP Browser (C++, Symbian 6.0-7.0), 2000-2001
-        \item Universal Browser (C++, Symbian 6.0), 1999-2000
     \end{list2}\vspace{-1.5mm}
    
     \textbf{Logica UK Ltd.}, Defence Division, London, UK \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Analyst/Programmer, Consultant} \hfill \textbf{October 1995 -- April 1999}\vspace{-3mm}\\\vspace{-1mm}%
+    \textsl{Analyst/Programmer, Consultant} \hfill \textbf{October 1994 -- April 1999}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Sea King Whisky, a tactical data link for Racal (Ada95, VxWorks), 1999
-        \item Land Formation Model, a parallel discrete event simulation for DERA\\(now QinetiQ) (C++/Solaris/CORBA), 1996-1998
-        \item Bids and sales for Simulation and Modelling Account, 1996
+        \item Land Formation Model, a parallel discrete event simulation for DERA (C++/Solaris/CORBA), 1996-1998
         \item STAMGEN, land-based sensor simulation for DERA (C++/Solaris/ILOG Views/Geodesy), 1994-1996
     \end{list2}\vspace{-1.5mm}
 
     \textbf{Thorn EMI Electronics Ltd.}, Feltham, Middlesex, UK \vspace{2mm}\\\vspace{1mm}%
     \textsl{Sponsored Student Engineer} \hfill \textbf{September 1990 -- August 1991, vacations 1992/93}\vspace{-3mm}\\\vspace{-1mm}%
-    \begin{list2}
-        \item Various short projects in digital electronics and software for radar systems, 
-                  secure data links, and passive infra-red imaging
-        \item Four-month apprenticeship in training school and QA department
-    \end{list2}\vspace{-1.5mm}
+    \vspace{-1.5mm}
 
-
-    %__________________________________________________________________________________________________________________
-    % Technical Skills
-    \section{\mysidestyle Technical Skills} 
-
-    These are listed in order of expertise from most to least familiar.
-
-    \textbf{Languages}: Golang, C++11, Ruby, Java incl. Guava and Guice, Python, Javascript, Objective-C, R    \vspace{0.5mm}\\%
-    \textbf{Scripting}: bash, sed, awk                                                                         \vspace{0.5mm}\\%
-    \textbf{Mobile OSes}: Symbian OS 6.0-9.2, S60 2-5, Android 2.1-4.0, iOS6.1                                 \vspace{0.5mm}\\%
-    \textbf{Desktop OSes}: Ubuntu; Mac OS X; Windows 95,XP,2000,7                                              \vspace{0.5mm}\\%
-    \textbf{Google-specific}: Protocol Buffers, Map-Reduce, FlumeJava/C++, Spanner, Java Producers, Guice, Borg, Borgmon, GSLB                                                   \vspace{0.5mm}\\%
-    \textbf{IDEs}: Eclipse, IntelliJ, XCode, Microsoft Visual Studio, Metrowerks Codewarrior                   \vspace{0.5mm}\\%
-    \textbf{Continuous Integration/Build}: Jenkins, CruiseControl; Ant, Maven, Rake                            \vspace{0.5mm}\\%
-    \textbf{Databases, datastores and query languages}: MySQL, MongoDB, Hadoop/HDFS, Pig, Redis, memcached     \vspace{0.5mm}\\%
-    \textbf{Monitoring}: Zabbix, Scalyr, PagerDuty                                                             \vspace{0.5mm}\\%
-    \textbf{API design}: REST APIs with HTTP/JSON, XML, OAuth                                                  \vspace{0.5mm}\\%
-    \textbf{OO Design}: UML, Rational Rose                                                                     \vspace{0.5mm}\\%
-    \textbf{Version Control}: Perforce, git                                                                    \vspace{0.5mm}\\%
-    \textbf{Project Management}: Kanban, Pivotal Tracker, Trello                                               \vspace{0.5mm}\\%
-    \textbf{Office, etc.}: Google Docs, Microsoft Office, OpenOffice, \LaTeX, the GIMP, Photoshop/Illustrator, Sibelius
 
     %__________________________________________________________________________________________________________________
     % Education
@@ -160,10 +124,9 @@ right  = 2.75cm]{geometry}
     \textsl{BA (Hons)} Electrical and Information Sciences (II.I)\hfill \textbf{ September 1991 -- June 1994}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Y3 (II.I): Analogue and Digital Electronics, Non-Linear Systems, 
-            Mathematics, Communications, Information Engineering, Computer 
-            Systems, Project: `Stereo Vision with Finger Pointing for a Man-Machine Interface'
-        \item Y2 (I): Circuits, Control Systems, Materials, Digital Electronics, 
-            Computing, Thermodynamics, Fluid Mechanics
+            Mathematics, Communications, Information Engineering, Computer Systems, Project: `Stereo Vision with Finger
+            Pointing for a Man-Machine Interface'
+        \item Y2 (I): Circuits, Control Systems, Materials, Electronics, Computing, Thermodynamics, Fluid Mechanics
         \item Y1 (II.I): Electronics, Mathematics, Structures, Mechanics, Materials,  Drawing
     \end{list2}\vspace{-1.5mm}
 
@@ -176,24 +139,17 @@ right  = 2.75cm]{geometry}
 
     \textbf{Beauchamp College}, Leicester, UK\hfill \textbf{ September 1986 -- July 1990}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item GCE `S' Levels: Mathematics (1), Chemistry (2)
-        \item GCE `A' Levels: Mathematics (A), Physics (A), Chemistry (A), Further Mathematics (B)
-        \item 10 GCSEs: 6(A), 3(B), 1(C)
+        \item 2 `S' Levels (1, 2); 4 `A' Levels (AAAB), 10 GCSEs: (6A, 3B, C)
     \end{list2}\vspace{-1.5mm}
  
     %__________________________________________________________________________________________________________________
     % Awards
-    \section{\mysidestyle Awards} 
+    \section{\mysidestyle Selected Awards} 
 
     London \& Southeast Craft Beer Competition 2017 Gold Medal (Brown and Bitter category)            \vspace{0.5mm}\\%
     Google TI Award 2016; Peer Bonus x6 2008-2016; Spot Bonus, 2015, 2008                             \vspace{0.5mm}\\%
-    Symbian `Extra Mile' Award, 2004, 2002, 2000                                                      \vspace{0.5mm}\\%
-    Symbian Teamwork Award, 2001                                                                      \vspace{0.5mm}\\%
-    College Travel Report Prize following travels in South America, 1994                              \vspace{0.5mm}\\%
-    College Prize for Second Year exam results, 1993                                                  \vspace{0.5mm}\\%
     Institute Of Electrical Engineers Jubilee Scholarship to University, 1990                         \vspace{0.5mm}\\%
-    Thorn EMI Electronics Ltd. `thick sandwich' sponsorship to University, 1990                       \vspace{0.5mm}\\%
-    Engineering Employers London Association `Young Trainee of the Year', 1990
+    Thorn EMI Electronics Ltd. `thick sandwich' sponsorship to University, 1990
 
     %__________________________________________________________________________________________________________________
     % Publications
@@ -207,34 +163,23 @@ right  = 2.75cm]{geometry}
     % Affiliations
     \section{\mysidestyle Affiliations and Responsibilities}
 
+    Baritone sax and committee chair, King Groovy \& the Hornstars band \url{http://hornstars.com}, 2015 -- \vspace{0.5mm}\\% 
     Member of Open Rights Group, 2010 --                                                              \vspace{0.5mm}\\%
-    Trustee of South London Community Music, 2009 -- 2010                                             \vspace{0.5mm}\\%
-    Registered as CEng, 2005                                                                          \vspace{0.5mm}\\%
     Member of CAMRA, 2004 --                                                                          \vspace{0.5mm}\\%
-    Member of the IEE (now IET), 1991 --
+    Member of the IEE (now IET), 1991 -- present; registered as CEng 2005
 
     %__________________________________________________________________________________________________________________
     % Hobbies/Interests
     \section{\mysidestyle Hobbies and Interests}
-    \vspace{1.5mm}
-    \begin{table}[ht]
-        \begin{tabular}{p{2cm} p{12cm}}
-        {Music}&{Saxophones (various shapes and sizes; Grade VIII in 1990), piano (Grade VIII in 1990), choral singing;
-                 attending gigs; eclectic listening tastes. I currently play in the jazz big band \textsl{`King Groovy
-                 and the Hornstars'} \url{http://hornstars.com}. }\\                                  \vspace{0.5mm}\\%
-        {Recording}&{Some of my work is on \url{http://soundcloud.com/hadfieldp}}\\
-                                                                                                      \vspace{0.5mm}\\%
-        {Other}&{Home-brewing, photography, hacking, running, indoor rowing, travel, electronics,
-		 SE19ista}\\                                                                          \vspace{0.5mm}\\%
-        {Family}&{With my partner Rachel, and two energetic kids, Oscar (12) and Miranda (8)}\\
-        \end{tabular}
-    \end{table}
+
+    Music (sax, piano \& singing), recording (\url{http://soundcloud.com/hadfieldp}), home-brewing, photography,
+    hacking, electronics, running, rowing, travel, family (partner Rachel \& two kids aged 8 and 12)
+
     %__________________________________________________________________________________________________________________
-    % Referees
-    \section{\mysidestyle Referees} 
+    % References
+    \section{\mysidestyle References} 
 
     Available on request.
-
 %______________________________________________________________________________________________________________________
 \end{resume}
 \end{document}
