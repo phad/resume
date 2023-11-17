@@ -18,7 +18,7 @@ right  = 2.75cm]{geometry}
     % Contact Information
     \section{\mysidestyle Contact\\Information}
 
-    Based in London, UK.                   \hfill \url{mailto:paul@phad.org.uk}            \vspace{0mm}\\\vspace{0mm}%
+    Based in London SE19, UK.              \hfill \url{mailto:hadfieldp@gmail.com}         \vspace{0mm}\\\vspace{0mm}%
                                            \hfill \url{https://github.com/phad}            \vspace{0mm}\\\vspace{0mm}%
                                            \hfill \url{https://keybase.io/hadfieldp}       \vspace{0mm}\\\vspace{0mm}%
                                            \hfill \url{tel:44-7973-297961}                 \vspace{0mm}\\\vspace{-4.5mm}%
@@ -27,31 +27,50 @@ right  = 2.75cm]{geometry}
     % Career Objective
     \section{\mysidestyle Objective}
 
-    A lead developer role in a fast-moving team, developing funky products that make a real difference to their users,
-    offering intellectual challenge, technical variety and the application of responsible software development
-    practices.
+    A leading developer role in a tight-knit team, building products that improve the safety, security and privacy of
+    users and their data.  I'm looking for a software group that offers intellectual challenge, technical variety, and
+    the opportunity to have a meaningful impact on others.
 
     %__________________________________________________________________________________________________________________
     % Profile
     \section{\mysidestyle Profile}
 
-    I am a Software Engineer with over 25 years of professional development experience.  I currently work in Monzo
-    Bank's security group as a Backend Engineer in the Security Platform squad.  We own the libraries that enable other
-    teams to build Go microservices in a secure way.  Previously, I worked in Google's security group on Certificate
-    Transparency - an effort to increase trust in the Web PKI and to detect CA malfeasance or compromise.  In 2006 I
-    was one of Google's earliest SWE hires in the new London engineering office.  I have start-up experience from two
-    years at Songkick, one of London's first Silicon Roundabout start-ups.
+    I am a Software Engineer with over 25 years of professional development experience.  I currently work at Google in
+    the Android group, on the server stack behind Android and WhatsApp backup.  Our service manages an \textsl{xx} EiB estate of
+    user data for over a billion users. My earlier experience at Google includes six years in the security team, where
+    I worked on Certificate Transparency - an effort to increase trust in the Web PKI and to detect CA malfeasance or
+    compromise.  In 2006 I was one of Google's earliest SWE hires in the new London engineering office.
+    During 2020-2021 I worked in Monzo Bank's security group, as a Backend Engineer in the Security Platform squad.  I
+    also have start-up experience from two years spent at Songkick, one of London's first Silicon Roundabout start-ups.
 
     %__________________________________________________________________________________________________________________
     % Selected Projects
     \section{\mysidestyle Selected Projects}
+
+    In the \textsl{Android Onboarding} group, I work on Moscato - a modern Java service that underpins device backups
+    for Android users. It serves millions of queries-per-second to billions of user devices. I'm responsible for the
+    roll-out of new gRPC APIs to clients, for our integration with Legal Takeout, and for defining a new process for
+    disaster recovery.  I work closely with SREs and client-side engineers.  I've contributed to GMS Core and the
+    Android Open-source project.  My current project brings our server stack into compliance with the EU's Digital
+    Markets Act, DMA5(2).
 
     For the \textsl{Google Transparency Report} I built a system to ingest millions of SSL certs from all known CT Logs,
     cryptographically verifying the Logs' correctness in the process.  I designed the storage and serving layers, and
     implemented a front-end to allow users to search for certificates that might be served on their domains.  This
     helps users understand whether mis-issuance of certs has occurred that could impact the safety of their users. The
     rewrite I did in 2019 using Spanner Queues hugely improved throughput and reliability of the search indexing aspect
-    downstream of ingestion.
+    downstream of ingestion.  I wrote a monitoring tool using the ingested corpus of certs.  This checked for cert
+    mis-issuances across Google's entire domain estate.  During early testing, my monitor caught a genuine
+    \url{google.com} cert mis-issuance by Thawte - a reseller of Symantec - which got coverage in the tech press.  This
+    contributed to the eventual distrust of Symantec's roots and the closure of their certs business.
+
+    At \textsl{Monzo}, I extended an existing alerting system to ingest CVE feeds into an internal incident database.
+    Later I extended it again to ingest findings from the third-party Snyk service, and assign vulnerability alert tickets
+    to the appropiate team. I worked on systems to define and enforce staff policies for access to internal systems. I
+    built a system using gRPC service introspection to assist in policing engineers' direct access to internal RPC
+    services.  I was on the Security Operations rota, with duties including investigation and resolution of alerts
+    from a variety of detection systems.  This role included mentoring new operations staff and writing playbook
+    material.
 
     As part of \textsl{Google's AdSense Plugin for Wordpress} I implemented a feature to automatically place Ad Slots
     in users' Wordpress pages in locations recommended by an ML system. I did the back-end and front-end dev work.  To
@@ -64,12 +83,24 @@ right  = 2.75cm]{geometry}
     analysing data collected from the product. The ideas behind `Detour' were quite disruptive, and it was exciting to
     see how the product resonated with users.
 
+    \pagebreak
+
     %__________________________________________________________________________________________________________________
     % Professional Experience
     \section{\mysidestyle Professional\\Experience}
 
+    \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
+    \textbf{Senior Software Engineer} \hfill \textbf{June 2021 -- current}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Android Backup \& Restore server development - Java, Guice, AppsFramework, Boq, Spanner, Blobstore, SQL,
+        FlumeJava, Borg/Sigma, Monitoring, SLOs/SLIs with SREs, on-call rota
+        \item Android Backup \& Restore client development - Java, Android, GMScore, Android Open-Source Project, adb
+        \item Golang readability reviewer (2017-2019, 2021-2023, volunteer basis)
+        \item 20\% project -- Android Security 'DroidzInspect', checking apps for OWASP MASVS violations - Python
+    \end{list2}\vspace{-1.5mm}
+
     \textbf{Monzo Bank Ltd.}, London, UK \vspace{2mm}\\\vspace{1mm}%
-    \textbf{Backend Engineer} \hfill \textbf{February 2020 -- current}\vspace{-3mm}\\\vspace{-1mm}%
+    \textbf{Backend Engineer} \hfill \textbf{February 2020 -- May 2021}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
         \item Backend microservice development - Golang, Cassandra, Proto, Kubernetes, AWS
         \item Front end tool development - Javascript, React, Next.js
@@ -79,7 +110,6 @@ right  = 2.75cm]{geometry}
     \textbf{Google Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
     \textbf{Senior Software Engineer} \hfill \textbf{November 2013 -- January 2020}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Golang readability reviewer (2017-2019, volunteer basis)
         \item Trillian and Key Transparency (KT) - occasional open-source contributions (Golang), 2017-2018
         \item Certificate Transparency (CT) - Log Ingestion and Search (Golang, Python, SQL, Spanner, ST, Flume-C++, Pubsub2, Borg; on-call), 2016-2019
         \item Public work: contributions to Chromium (C++) and IETF's RFC6962-bis (CT v2), 2016-2018
@@ -87,8 +117,6 @@ right  = 2.75cm]{geometry}
         \item Certificate Transparency - Compliance Monitoring (C++11, Spanner, SQL, Borg, Proto, Stubby; on-call), 2015-2016
         \item Google AdSense Plugin (Java, Guice, Producers, FlumeJava, Javascript, Python, SQL, R), 2013-2014
     \end{list2}\vspace{-1.5mm}
-
-    \pagebreak
 
     \textbf{Songkick.com, Inc.}, London, UK \vspace{2mm}\\\vspace{1mm}%
     \textsl{Senior Software Engineer} \hfill \textbf{August 2011 -- September 2013}\vspace{-3mm}\\\vspace{-1mm}%
@@ -163,7 +191,7 @@ right  = 2.75cm]{geometry}
     \section{\mysidestyle Selected Awards}
 
     London \& Southeast Craft Beer Competition 2017 Gold Medal (Brown and Bitter category)            \vspace{0.5mm}\\%
-    Google TI Award 2016; Peer Bonus x6 2008-2016; Spot Bonus, 2015, 2008                             \vspace{0.5mm}\\%
+    Google TI Award 2016; Peer Bonus 9x 2008-2023; Spot Bonus, 2015, 2008, 2021, 2022                 \vspace{0.5mm}\\%
     Institute Of Electrical Engineers Jubilee Scholarship to University, 1990                         \vspace{0.5mm}\\%
     Thorn EMI Electronics Ltd. `thick sandwich' sponsorship to University, 1990
 
@@ -179,17 +207,20 @@ right  = 2.75cm]{geometry}
     % Affiliations
     \section{\mysidestyle Affiliations and Responsibilities}
 
+    Member of United Tech and Allied Workers union, a branch of the CWU, 2022 --                            \vspace{0.5mm}\\%
+    Member of South London Maker Space, 2021 --                                                             \vspace{0.5mm}\\%
     Baritone sax and committee chair, King Groovy \& the Hornstars band \url{http://hornstars.com}, 2015 -- \vspace{0.5mm}\\%
-    Member of Open Rights Group, 2010 --                                                              \vspace{0.5mm}\\%
-    Member of CAMRA and volunteer podcast editor, 2004 --                                                                          \vspace{0.5mm}\\%
-    Member of the IEE (now IET), 1991 -- present; registered as CEng 2005
+    Member of the Incorporated Society of Musicians, 2019 --                                                \vspace{0.5mm}\\%
+    Member of Open Rights Group, 2010 --                                                                    \vspace{0.5mm}\\%
+    Member of CAMRA, 2004 -- , and volunteer podcast editor, 2020 -- 2022                                   \vspace{0.5mm}\\%
+    Member of the IET, 1991 -- present; registered as CEng 2005
 
     %__________________________________________________________________________________________________________________
     % Hobbies/Interests
     \section{\mysidestyle Hobbies and Interests}
 
     Music (sax, piano \& hammond organ), recording (\url{http://soundcloud.com/hadfieldp}), home-brewing, hacking,
-    electronics (built a synth and now working on a Picade bartop arcade machine), running, indoor rowing, family.
+    electronics (built a Picade bartop arcade machine, a modular synth and now working on fx pedals), running, family.
 
     %__________________________________________________________________________________________________________________
     % References
@@ -199,7 +230,7 @@ right  = 2.75cm]{geometry}
 
     %__________________________________________________________________________________________________________________
     % Last Update
-    \section{\mysidestyle Last Updated: 2021-01-21T15:50:00+0000}
+    \section{\mysidestyle Last Updated: 2023-11-18T13:29:30+0000}
 
 %______________________________________________________________________________________________________________________
 \end{resume}
