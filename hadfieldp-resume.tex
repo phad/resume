@@ -20,7 +20,6 @@ right  = 2.75cm]{geometry}
 
     Based in London SE19, UK.              \hfill \url{mailto:hadfieldp@gmail.com}         \vspace{0mm}\\\vspace{0mm}%
                                            \hfill \url{https://github.com/phad}            \vspace{0mm}\\\vspace{0mm}%
-                                           \hfill \url{https://keybase.io/hadfieldp}       \vspace{0mm}\\\vspace{0mm}%
                                            \hfill \url{tel:44-7973-297961}                 \vspace{0mm}\\\vspace{-4.5mm}%
 
     %__________________________________________________________________________________________________________________
@@ -29,19 +28,19 @@ right  = 2.75cm]{geometry}
 
     A leading developer role in a tight-knit team, building products that improve the safety, security and privacy of
     users and their data.  I'm looking for a software group that offers intellectual challenge, technical variety, and
-    the opportunity to have a meaningful impact on others.
+    the opportunity to have a meaningful impact on others' daily lives.
 
     %__________________________________________________________________________________________________________________
     % Profile
     \section{\mysidestyle Profile}
 
-    I am a Software Engineer with over 25 years of professional development experience.  I currently work at Google in
-    the Android group, on the server stack behind Android and WhatsApp backup.  Our service manages an \textsl{xx} EiB estate of
-    user data for over a billion users. My earlier experience at Google includes six years in the security team, where
-    I worked on Certificate Transparency - an effort to increase trust in the Web PKI and to detect CA malfeasance or
-    compromise.  In 2006 I was one of Google's earliest SWE hires in the new London engineering office.
+    I am a Software Engineer with 30 years of professional development experience.  I currently work at Google in
+    the Android group, on the server stack behind Android and WhatsApp backup.  Our service manages an \textsl{xx} EiB
+    estate of user data for over a billion users. My earlier experience at Google includes six years in the security
+    team, where I worked on Certificate Transparency (CT) - an effort to increase trust in the Web PKI and to detect CA
+    malfeasance or compromise.  In 2006 I was one of Google's earliest SWE hires in the new London engineering office.
     During 2020-2021 I worked in Monzo Bank's security group, as a Backend Engineer in the Security Platform squad.  I
-    also have start-up experience from two years spent at Songkick, one of London's first Silicon Roundabout start-ups.
+    have start-up experience from 2 years at Songkick, one of the first Silicon Roundabout start-ups.
 
     %__________________________________________________________________________________________________________________
     % Selected Projects
@@ -49,39 +48,43 @@ right  = 2.75cm]{geometry}
 
     In the \textsl{Android Onboarding} group, I work on Moscato - a modern Java service that underpins device backups
     for Android users. It serves millions of queries-per-second to billions of user devices. I'm responsible for the
-    roll-out of new gRPC APIs to clients, for our integration with Legal Takeout, and for defining a new process for
-    disaster recovery.  I work closely with SREs and client-side engineers.  I've contributed to GMS Core and the
-    Android Open-source project.  My current project brings our server stack into compliance with the EU's Digital
-    Markets Act, DMA5(2).
+    roll-out of new gRPC APIs to clients, for our integration with Legal Takeout, and for building tooling and a process
+    for disaster recovery.  I work closely with SREs and client-side engineers.  I've contributed to GMS Core and the
+    Android Open-Source Project.  In 2024 I was responsible for bringing our server stack into compliance with the EU's
+    Digital Markets Act, DMA5(2) - this required detailed end-to-end knowledge of our data flows.
 
     For the \textsl{Google Transparency Report} I built a system to ingest millions of SSL certs from all known CT Logs,
     cryptographically verifying the Logs' correctness in the process.  I designed the storage and serving layers, and
     implemented a front-end to allow users to search for certificates that might be served on their domains.  This
-    helps users understand whether mis-issuance of certs has occurred that could impact the safety of their users. The
-    rewrite I did in 2019 using Spanner Queues hugely improved throughput and reliability of the search indexing aspect
+    helps users understand whether mis-issuance of certs has occurred that could impact the safety of their users. My
+    rewrite in 2019 used Spanner Queues to hugely improve throughput and reliability of the search indexing aspect
     downstream of ingestion.  I wrote a monitoring tool using the ingested corpus of certs.  This checked for cert
-    mis-issuances across Google's entire domain estate.  During early testing, my monitor caught a genuine
+    mis-issuances across Google's estate of 1,000s of domains.  During early testing, my monitor caught a genuine
     \url{google.com} cert mis-issuance by Thawte - a reseller of Symantec - which got coverage in the tech press.  This
-    contributed to the eventual distrust of Symantec's roots and the closure of their certs business.
+    contributed to the eventual distrust of Symantec's root CA certs, and the closure of their certificate business.
 
-    At \textsl{Monzo}, I extended an existing alerting system to ingest CVE feeds into an internal incident database.
-    Later I extended it again to ingest findings from the third-party Snyk service, and assign vulnerability alert tickets
+    At \textsl{Monzo}, I extended an existing alerting system to ingest CVE feeds into an internal incident database. I
+    wrote custom ticketing workflows in Jira to implement a vulnerability management process.  Later I extended the
+    incident system again to ingest findings from the third-party Snyk service, and assign vulnerability alert tickets
     to the appropiate team. I worked on systems to define and enforce staff policies for access to internal systems. I
     built a system using gRPC service introspection to assist in policing engineers' direct access to internal RPC
     services.  I was on the Security Operations rota, with duties including investigation and resolution of alerts
     from a variety of detection systems.  This role included mentoring new operations staff and writing playbook
     material.
 
+    In 2019 I did some contract development for \textsl{UXStudy.com}, to implement a prototype for an asset management
+    system to organise user study artifacts. This used Javascript, Ember, Node.JS, MySQL, and Synology NAS.
+
     As part of \textsl{Google's AdSense Plugin for Wordpress} I implemented a feature to automatically place Ad Slots
     in users' Wordpress pages in locations recommended by an ML system. I did the back-end and front-end dev work.  To
     determine if the recommendations were effective I designed an A/B experiment and performed a statistical analysis
     of monetization uplift.  I then refocused the product to emphasize the aspects that performed best.
 
-    I built the back-end services for \textsl{Songkick's `Detour'} crowdfunded concert product. I enjoyed
-    being part of a small, agile dev team working in the early product discovery phase, with rapid cycles of building
-    out new features, launching experimentally, measuring their performance through A/B tests and user studies and
-    analysing data collected from the product. The ideas behind `Detour' were quite disruptive, and it was exciting to
-    see how the product resonated with users.
+    I built the back-end services for \textsl{Songkick's `Detour'} crowdfunded concert product. I enjoyed being part
+    of a small, agile dev team working in the early product discovery phase, with rapid cycles of building out new
+    features, launching experimentally, measuring their performance with A/B tests and user studies, and analysing
+    data collected from the product. \textsl{`Detour'}s ideas were disruptive, and I loved seeing how it resonated
+    with users.
 
     \pagebreak
 
@@ -95,15 +98,17 @@ right  = 2.75cm]{geometry}
         \item Android Backup \& Restore server development - Java, Guice, AppsFramework, Boq, Spanner, Blobstore, SQL,
         FlumeJava, Borg/Sigma, Monitoring, SLOs/SLIs with SREs, on-call rota
         \item Android Backup \& Restore client development - Java, Android, GMScore, Android Open-Source Project, adb
-        \item Golang readability reviewer (2017-2019, 2021-2023, volunteer basis)
+        \item Golang readability reviewer (2017-2019, 2021-current, volunteer basis)
         \item 20\% project -- Android Security 'DroidzInspect', checking apps for OWASP MASVS violations - Python
     \end{list2}\vspace{-1.5mm}
 
     \textbf{Monzo Bank Ltd.}, London, UK \vspace{2mm}\\\vspace{1mm}%
-    \textbf{Backend Engineer} \hfill \textbf{February 2020 -- May 2021}\vspace{-3mm}\\\vspace{-1mm}%
+    \textbf{Backend Engineer in Security} \hfill \textbf{February 2020 -- May 2021}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Backend microservice development - Golang, Cassandra, Proto, Kubernetes, AWS
-        \item Front end tool development - Javascript, React, Next.js
+        \item Backend microservice development - Golang, Cassandra, Proto, Kubernetes, AWS, Teleport
+        \item Front end tool development - Javascript, React, Next.js, Slack integration
+        \item Vulnerability Management - workflow integrations with Slack, Jira and Snyk
+        \item Safer APIs - role-based access control to services using gRPC reflection and proto extensions
         \item Security Operations rota - internal security advice/support, resolving alerts, various approval tasks
     \end{list2}\vspace{-1.5mm}
 
@@ -208,8 +213,10 @@ right  = 2.75cm]{geometry}
     \section{\mysidestyle Affiliations and Responsibilities}
 
     Member of United Tech and Allied Workers union, a branch of the CWU, 2022 --                            \vspace{0.5mm}\\%
-    Member of South London Maker Space, 2021 --                                                             \vspace{0.5mm}\\%
-    Baritone sax and committee chair, King Groovy \& the Hornstars band \url{http://hornstars.com}, 2015 -- \vspace{0.5mm}\\%
+    Member of South London Maker Space, 2021 -- 2024                                                        \vspace{0.5mm}\\%
+    Alto and Soprano sax, King Groovy \& the Hornstars band \url{http://hornstars.com}, 2012 --             \vspace{0.5mm}\\%
+    Baritone sax, The Crooks Saxes, 2017 --                                                                 \vspace{0.5mm}\\%
+    Tenor voice, London Oriana Choir, 2008 -- 2018                                                          \vspace{0.5mm}\\%
     Member of the Incorporated Society of Musicians, 2019 --                                                \vspace{0.5mm}\\%
     Member of Open Rights Group, 2010 --                                                                    \vspace{0.5mm}\\%
     Member of CAMRA, 2004 -- , and volunteer podcast editor, 2020 -- 2022                                   \vspace{0.5mm}\\%
@@ -220,7 +227,7 @@ right  = 2.75cm]{geometry}
     \section{\mysidestyle Hobbies and Interests}
 
     Music (sax, piano \& hammond organ), recording (\url{http://soundcloud.com/hadfieldp}), home-brewing, hacking,
-    electronics (built a Picade bartop arcade machine, a modular synth and now working on fx pedals), running, family.
+    electronics (built a Picade bartop arcade machine, a modular synth, learning how to code for DSP), running, family.
 
     %__________________________________________________________________________________________________________________
     % References
@@ -230,7 +237,7 @@ right  = 2.75cm]{geometry}
 
     %__________________________________________________________________________________________________________________
     % Last Update
-    \section{\mysidestyle Last Updated: 2023-11-18T13:29:30+0000}
+    \section{\mysidestyle Last Updated: 2025-01-10T11:58:29+0000}
 
 %______________________________________________________________________________________________________________________
 \end{resume}
